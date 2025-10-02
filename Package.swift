@@ -16,8 +16,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "7.0.0"),
-        .package(url: "https://github.com/Scandit/scandit-capacitor-datacapture-core.git", exact: Version(stringLiteral: version)),
-        .package(url: "https://github.com/Scandit/scandit-datacapture-frameworks-parser.git", exact: Version(stringLiteral: version)),
+        .package(url: "https://github.com/konradgap/scandit-capacitor-datacapture-core.git", exact: Version(stringLiteral: version)),
+        .package(url: "https://github.com/konradgap/scandit-datacapture-frameworks-parser.git", exact: Version(stringLiteral: version)),
     ],
     targets: [
         .target(
