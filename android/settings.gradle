@@ -1,0 +1,13 @@
+include ':capacitor-android'
+project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
+
+include ':scandit-capacitor-datacapture-core'
+project(':scandit-capacitor-datacapture-core').projectDir = new File('../../scandit-capacitor-datacapture-core/android')
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            from(files("../../../common/libs.versions.toml"))
+        }
+    }
+}
